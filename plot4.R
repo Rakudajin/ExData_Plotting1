@@ -23,7 +23,7 @@ plot(wd$TD, wd$Voltage, type = "l", xlab = "datetime", ylab = "Voltage")
 plot(wd$TD, wd$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering")
 points(wd$TD, wd$Sub_metering_2, col = "red", type = "l")
 points(wd$TD, wd$Sub_metering_3, col = "blue", type = "l")
-legend("topright", lwd=1, col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
+legend("topright", lwd=1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 
 #draw plot 4
 plot(wd$TD, wd$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power")
