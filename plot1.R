@@ -1,6 +1,9 @@
 #get raw data (rd)
 rd = read.table("household_power_consumption.txt", header = TRUE, sep = ";", na.strings = "?")
 
+#to have Rnglish weekday names
+Sys.setlocale("LC_TIME", "English"
+
 #get work data (rd)
 wd = subset(rd, rd$Date == "1/2/2007" | rd$Date == "2/2/2007")
 
